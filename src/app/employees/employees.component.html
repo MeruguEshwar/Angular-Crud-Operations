@@ -1,0 +1,120 @@
+<app-dashboard></app-dashboard>
+<!-- <div id="main">
+    <p>Employee Works</p>
+</div> -->
+<button type="button" id="btntop" class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Add trainers</button>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Add Trainers</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<form #addcustomerForm="ngForm">
+
+  <div class="form-group">
+    <label for="message-text" class="col-form-label">Id</label>
+    <input type="text" [(ngModel)]="id" name="id" class="form-control" id="recipient-name">
+  </div>
+
+  <div class="form-group">
+    <label for="recipient-name" class="col-form-label">Frtname</label>
+    <input type="text" [(ngModel)]="frtname" name="frtname" class="form-control" id="recipient-name">
+  </div>
+
+  <div class="form-group">
+    <label for="recipient-name" class="col-form-label">Lastname</label>
+    <input type="text" [(ngModel)]="lastname" name="lastname" class="form-control" id="recipient-name">
+  </div>
+
+  <div class="form-group">
+    <label for="message-text" class="col-form-label">Email</label>
+    <input type="text" [(ngModel)]="email" name="email" class="form-control" id="recipient-name">
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <button class="btn btn-primary">Register</button>
+  </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+<table>
+  <tr>
+    <th>S.NO</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Update</th>
+    <th>delete</th>
+  </tr>
+  <tr *ngFor="let nani of users">
+    <td> {{nani.id}}</td>
+    <td> {{nani.frtname}}</td>
+    <td> {{nani.lastname}}</td>
+    <td> {{nani.email}}</td>
+    <td><i style="font-size:24px" class="fa" data-target="#exampleModal1" data-toggle="modal">&#xf040;</i></td>
+    <td><i class="material-icons">&#xe92b;</i></td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Update Trainers</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<form #addcustomerForm="ngForm">
+
+  <div class="form-group">
+    <label for="message-text" class="col-form-label">Id</label>
+    <input type="text" [(ngModel)]="id" name="id" class="form-control" id="recipient-name">
+  </div>
+
+  <div class="form-group">
+    <label for="recipient-name" class="col-form-label">Frtname</label>
+    <input type="text" [(ngModel)]="frtname" name="frtname" class="form-control" id="recipient-name">
+  </div>
+
+  <div class="form-group">
+    <label for="recipient-name" class="col-form-label">Lastname</label>
+    <input type="text" [(ngModel)]="lastname" name="lastname" class="form-control" id="recipient-name">
+  </div>
+
+  <div class="form-group">
+    <label for="message-text" class="col-form-label">Email</label>
+    <input type="text" [(ngModel)]="email" name="email" class="form-control" id="recipient-name">
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <button class="btn btn-primary">Update</button>
+  </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+

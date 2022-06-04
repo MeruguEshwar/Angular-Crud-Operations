@@ -1,0 +1,52 @@
+{
+  "Datalist": [
+    {
+      "id": 1,
+      "name": "Raju",
+      "age": 46,
+      "qul": "HTML"
+    },
+    {
+      "name": "sivaKumar",
+      "age": 24,
+      "qul": "python",
+      "id": 2
+    },
+    {
+      "name": "eshwar",
+      "age": 32,
+      "qul": "Btech",
+      "id": 3
+    },
+    {
+      "name": "nani",
+      "age": 22,
+      "qul": "Btech",
+      "id": 4
+    },
+    {
+      "name": "Chandra",
+      "age": 43,
+      "qul": "degree",
+      "id": 5
+    },
+    {
+      "name": "Sampath",
+      "age": 22,
+      "qul": "degree",
+      "id": 6
+    },
+    {
+      "name": "nai",
+      "age": 22,
+      "qul": "dsa",
+      "id": 7
+    },
+    {
+      "name": "mouli",
+      "age": 22,
+      "qul": "MCA",
+      "id": 8
+    }
+  ]
+}

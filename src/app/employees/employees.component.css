@@ -1,0 +1,30 @@
+tr,th,td{
+    border: 2px solid black;
+}
+
+table{
+    margin-left: 400px;
+    width:700px;
+    margin-top: 80px;
+}
+
+i{
+    text-align: center;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.btn-primary{
+  float: right;
+  margin-right: 30px;
+
+}
+
+#btntop{
+    margin-top: 40px;
+}
+
+#exampleModalLabel{
+    margin-left: 180px;
+}
+

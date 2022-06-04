@@ -1,0 +1,31 @@
+<!-- <form #formdata="ngForm" (ngSubmit)="senddata(formdata.value)">
+    <input type="text" placeholder="name" name="name" ngModel>
+    <input type="number" placeholder="age" name="age" ngModel>
+    <input type="text" placeholder="qul" name="qul" ngModel>
+    <button type="submit">submitdata</button>
+</form> -->
+
+
+
+
+<div class="card border-primary mb-3" style="width: 35rem;height: 23rem;">
+    <div class="card-header bg-primary text-center font-weight-bold">Add Employee</div>
+    <div class="card-body">
+        <form #formdata="ngForm" (ngSubmit)="senddata(formdata.value)">            
+                <div class="form-group">
+                    <input type="text" class="form-control"  placeholder="Name" name="name" ngModel>
+                </div>
+        
+                <div class="form-group">
+                    <input type="number" class="form-control"  placeholder="age" name="age" ngModel>
+                </div>
+        
+                <div class="form-group">
+                    <input type="text" class="form-control"  placeholder="Qulfication" name="qul" ngModel>
+                </div> 
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                <!-- <button type="submit" class="btn btn-primary mb-3">Submit</button> -->
+        </form>
+    </div>
+    <div class="card-footer bg-primary text-center font-weight-bold">EshwarMerugu@copyright-Only</div>
+  </div>
